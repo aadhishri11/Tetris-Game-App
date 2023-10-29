@@ -6,7 +6,7 @@ trigger:
 - main
 
 resources:
-- repo: SelfAgent
+- repo: self
 
 variables:
   # Container registry service connection established during pipeline creation
@@ -17,7 +17,7 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'SelfAgent'
 
 stages:
 - stage: Build
